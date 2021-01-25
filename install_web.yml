@@ -4,7 +4,15 @@
   gather_facts: true
   become: true
   tasks:
-    - name: Nginx package
+    - name: Install nginx package
       apt:
         name: nginx
+        update_cache: true
+    - name: Install git
+      apt:
+        name: git
+        update_cache: true
+    - name: Clone git repository
+      apt:
+        name: clone
         update_cache: true
