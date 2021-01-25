@@ -1,0 +1,10 @@
+---
+- name: Install Ansible
+  hosts: web
+  gather_facts: true
+  become: true
+  tasks:
+    - name: Nginx package
+      apt:
+        name: nginx
+        update_cache: true
