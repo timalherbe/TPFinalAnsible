@@ -14,5 +14,5 @@
         update_cache: true
     - name: Clone git repository
       git:
-        name: <repo-html>
+        name: "https://github.com/CesarLortet/TP-Final_DevOps-HTML-Cesar_Lortet.git"
         dest: /var/www/html/
