@@ -1,7 +1,0 @@
----
-- name: Install docker + pull git repo
-  hosts: jenkins
-  gather_facts: true
-  become: true
-  roles:
-   - dev
