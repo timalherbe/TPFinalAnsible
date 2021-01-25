@@ -13,6 +13,6 @@
         name: git
         update_cache: true
     - name: Clone git repository
-      apt:
-        name: clone
-        update_cache: true
+      git:
+        name: <repo-html>
+        dest: /var/www/html/
